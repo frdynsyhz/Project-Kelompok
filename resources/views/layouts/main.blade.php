@@ -68,13 +68,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="{{route('home')}}">Home</a></li>
+          <li><a href="{{route('about')}}">About</a></li>
+          <li><a href="{{route('service')}}">Services</a></li>
+          <li><a href="{{route('testimoni')}}">Testimonials</a></li>
+          <li><a href="{{route('pricing')}}">Pricing</a></li>
+          <li><a href="{{route('portfolio')}}">Portfolio</a></li>
+          {{-- <li><a href="{{route('blog')}}">Blog</a></li> --}}
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -92,7 +92,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{{route('contact')}}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -109,15 +109,15 @@
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url(template/assets/img/slide/slide-1.jpg);">
           <div class="carousel-container">
-            <div class="carousel-content animate__animated animate__fadeInUp">
-              <h2>Welcome to <span>Flattern</span></h2>
+            <div class="text-center carousel-content animate__animated animate__fadeInUp">
+              <h2>Selamat Datang Di <span>Flattern</span></h2>
               <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              {{-- <div class="text-center"><a href="" class="btn-get-started">Read More</a></div> --}}
             </div>
           </div>
         </div>
 
-        <!-- Slide 2 -->
+        {{-- <!-- Slide 2 -->
         <div class="carousel-item" style="background-image: url(template/assets/img/slide/slide-2.jpg);">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
@@ -137,7 +137,7 @@
               <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
             </div>
           </div>
-        </div>
+        </div> --}}
 
       </div>
 
