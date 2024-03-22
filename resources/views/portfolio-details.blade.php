@@ -39,11 +39,11 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                  <img src="{{asset('assets/img/portfolio/portfolio-2.jpg')}}" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                  <img src="{{asset('assets/img/portfolio/portfolio-3.jpg')}}" alt="">
                 </div>
 
               </div>
