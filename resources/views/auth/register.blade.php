@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="{{ asset ('style/css/style.css')}}">
 </head>
 <body>
-    <form action="{{ route('registerproses') }}" method="POST"></form>
-    @csrf
-    
+
     <div class="main">
 
         <!-- Sign up form -->
@@ -24,7 +22,9 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <form method="POST" class="register-form" id="register-form"
+                            action="{{ route('registerproses') }}">
+                            @csrf
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>
@@ -64,7 +64,7 @@
     </div>
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="{{ asset ('vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{ asset ('style/js/main.js')}}"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
