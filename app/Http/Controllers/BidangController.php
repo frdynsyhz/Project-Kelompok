@@ -17,6 +17,7 @@ class BidangController extends Controller
         $bidang = bidang::create([
             'nama_bidang' => $request->nama_bidang,
         ]);
-        return back();
+        return back()->with(['success' => 'berhasil menambahkan bidang']);
+
     }
 }

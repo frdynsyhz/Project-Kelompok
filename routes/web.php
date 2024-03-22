@@ -3,6 +3,8 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\TempatPklController;
+use App\Http\Controllers\BidangController;
 
 
 
@@ -20,4 +22,6 @@ Route::get('service', [HomeController::class, 'service'])->name('service');
 Route::get('testimoni', [HomeController::class, 'testimoni'])->name('testimoni');
 Route::get('register',[AuthController::class, 'register'])->name('register');
 Route::post('register',[AuthController::class, 'registerproses'])->name('registerproses');
+Route::post('tambah-tempat-pkl',[TempatPklController::class, 'tambah'])->name('tambahtempatpkl');
+Route::post('tambah-bidang',[BidangController::class, 'tambahBidang'])->name('tambahbidang');
 

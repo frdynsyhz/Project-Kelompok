@@ -21,7 +21,7 @@ class TempatPklController extends Controller
             'nama_perusahaan' => $request->nama_perusahaan,
             'alamat' => $request->alamat,
         ]);
-        return redirect()->route('login')->with(['success' => 'berhasil menambahkan tempat pkl']);
+        return back()->with(['success' => 'berhasil menambahkan tempat pkl']);
     }
 
 }
