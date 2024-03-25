@@ -53,6 +53,16 @@
                     <i class="fas fa-upload"></i>
                     <span>Form</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{route('bidang')}}">
+                    <i class="fas fa-bars"></i>
+                    <span>Bidang</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{route('tempatpkl')}}">
+                    <i class="fas fa-city"></i>
+                    <span>Tempat pkl</span></a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">

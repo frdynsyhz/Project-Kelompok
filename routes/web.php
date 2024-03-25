@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -24,4 +25,8 @@ Route::get('register',[AuthController::class, 'register'])->name('register');
 Route::post('register',[AuthController::class, 'registerproses'])->name('registerproses');
 Route::post('tambah-tempat-pkl',[TempatPklController::class, 'tambah'])->name('tambahtempatpkl');
 Route::post('tambah-bidang',[BidangController::class, 'tambahBidang'])->name('tambahbidang');
-
+Route::get('dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+Route::get('form', [AdminController::class, 'form'])->name('form');
+Route::get('bidang', [AdminController::class, 'bidang'])->name('bidang');
+Route::get('tempatpkl', [AdminController::class, 'tempatpkl'])->name('tempatpkl');
+Route::post('logout',[AuthController::class, 'logout'])->name('logout');

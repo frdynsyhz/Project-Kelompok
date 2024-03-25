@@ -15,5 +15,11 @@ class AdminController extends Controller
         return view('admin.form');
 
     }
+    public function bidang(){
+        return view('admin.bidang');
 
+    }
+    public function tempatpkl(){
+        return view('admin.tempatpkl');
+    }
 }
