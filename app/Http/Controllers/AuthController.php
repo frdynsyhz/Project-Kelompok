@@ -71,4 +71,10 @@ class AuthController extends Controller
         ]);
         return redirect()->route('login')->with(['success'=> 'Register Berhasil']);
     }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        return redirect ('/login');
+    }
 }
